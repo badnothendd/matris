@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+//kullanıcıdan alınan sayılarla oluşturulan matrisin sütunlarının toplanıp ekrana yazılması
+
+int main() {
+	int i,j;
+	int matris[3][3];
+	int sum=0;
+	for (i=0; i<3; i++) {
+		for (j=0; j<3; j++) {
+		scanf("%d ",&matris[i][j]);
+	}
+}
+	for (i=0; i<3; i++) {
+		for (j=0; j<3; j++) {	
+		printf("%d ",matris[i][j]);
+	}
+	printf("\n");
+}
+    for (j=0; j<3; j++) {
+     for (i=0; i<3; i++) {
+		sum += matris[i][j];
+	}
+	printf("%d ", sum);
+	sum=0;
+}
+	return 0;
+}
